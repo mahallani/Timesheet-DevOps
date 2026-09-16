@@ -1,14 +1,10 @@
 Spring Boot DevOps – Projet pédagogique
--
-
-📌 Présentation:
-- 
+📌 Présentation
 Ce projet est une application Spring Boot utilisée dans le cadre du cours DevOps.
 L'objectif est de construire progressivement une chaîne CI/CD en intégrant différents outils DevOps, depuis la gestion du code source jusqu'au déploiement et à la supervision de l'application.
 Le projet servira de support pratique pour mettre en œuvre les différentes étapes du cycle Build → Test → Analyse → Package → Publication → Déploiement → Monitoring.
 
 🎯 Objectifs pédagogiques
--
 À travers ce projet, vous allez apprendre à :
 - gérer le code source avec Git / GitHub ;
 - automatiser le build avec Maven ;
@@ -21,42 +17,23 @@ Le projet servira de support pratique pour mettre en œuvre les différentes ét
 - mettre en place la supervision avec Prometheus et Grafana ;
 - construire progressivement une chaîne CI/CD complète.
 
-## 📁 Structure du projet
-
-Le projet suit la structure standard d'une application Spring Boot avec Maven.  
-Les fichiers DevOps seront ajoutés progressivement au cours des différentes étapes du projet.
-
-```text
+📁 Structure du projet
 spring-boot-devops/
+│
 ├── src/
 │   ├── main/
 │   │   ├── java/
-│   │   │   └── ...                    # Code source Java
+│   │   │   └── ...
 │   │   └── resources/
-│   │       └── application.properties # Configuration de l'application
+│   │       └── application.properties
+│   │
 │   └── test/
 │       └── java/
-│           └── ...                    # Tests
+│           └── ...
 │
-├── pom.xml                            # Configuration Maven
-└── README.md                          # Documentation du projet
-```
-Après l'étape Jenkins :
--
-```text
-spring-boot-devops/
-├── src/
-├── pom.xml
-├── Jenkinsfile
-└── README.md
-```
-Après l'étape Docker :
--
-```text
-spring-boot-devops/
-├── src/
 ├── pom.xml
 ├── Jenkinsfile
 ├── Dockerfile
 └── README.md
-```
+
+La structure pourra évoluer au fur et à mesure de l'intégration des différents outils DevOps.
