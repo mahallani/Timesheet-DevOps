@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     stages {
-
         stage('Checkout') {
             steps {
                 git branch: 'main',
@@ -12,7 +11,7 @@ pipeline {
 
         stage('Compile') {
             steps {
-                bat 'mvn compile'
+                sh 'mvn compile'
             }
         }
     }
